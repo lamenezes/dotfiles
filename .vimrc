@@ -69,4 +69,7 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2
 " powerline & gnome terminal
 set t_Co=256
-let g:Powerline_symbols = "fancy"
+let g:Powerline_symbols="fancy"
+
+" allow syntax
+syntax on
