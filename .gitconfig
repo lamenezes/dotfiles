@@ -3,3 +3,4 @@
     br = branch
     st = status
     co = checkout
+    amend = commit --amend
