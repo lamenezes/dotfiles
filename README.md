@@ -17,9 +17,4 @@ If you use Gnome Terminal powerline might not work as expected, some
 characters might not be displayed.  Therefore you need to install the
 correct fonts.
 
-More details on https://github.com/Lokaltog/vim-powerline and
-http://www.google.com
-
-
-[Vim]:http://www.vim.org
-[Vundle]:https://github.com/gmarik/vundle.git
+Check the following repo to download a powerline-friendly font: https://github.com/powerline/fonts
