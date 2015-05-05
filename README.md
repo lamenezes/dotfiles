@@ -16,3 +16,10 @@ characters might not be displayed.  Therefore you need to install the
 correct fonts.
 
 Check the following repo to download a powerline-friendly font: https://github.com/powerline/fonts
+
+## .pythonrc
+
+### How to use:
+Move the .pythonrc to your ~/ folder and add the following code to your ~/.bashrc file:
+    PYTHONSTARTUP=~/.pythonrc.py
+    export PYTHONSTARTUP
