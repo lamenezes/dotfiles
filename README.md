@@ -21,5 +21,6 @@ Check the following repo to download a powerline-friendly font: https://github.c
 
 ### How to use:
 Move the .pythonrc to your ~/ folder and add the following code to your ~/.bashrc file:
+
     PYTHONSTARTUP=~/.pythonrc.py
     export PYTHONSTARTUP
