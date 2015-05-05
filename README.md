@@ -1,9 +1,8 @@
-.vimrc
-======
-This is my [Vim] configuration file!
+# These are my .files, enjoy.
 
-How to use:
------------
+## .vimrc
+
+### How to use:
 1. Copy .vimrc file to your home folder (~/):
 2. Install [Vundle]:
 ```
@@ -11,8 +10,7 @@ $ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
 3. Run `:BundleInstall` on `vim`
 
-Troubleshooting:
-----------------
+### Troubleshooting:
 If you use Gnome Terminal powerline might not work as expected, some
 characters might not be displayed.  Therefore you need to install the
 correct fonts.
