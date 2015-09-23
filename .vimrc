@@ -19,6 +19,7 @@ Bundle 'fholgado/minibufexpl.vim'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
+Bundle 'davidhalter/jedi-vim'
 "
 " ...
 
@@ -73,3 +74,6 @@ let g:Powerline_symbols="fancy"
 
 " allow syntax
 syntax on
+
+" jedi vim configs
+let g:jedi#popup_on_dot = 0
