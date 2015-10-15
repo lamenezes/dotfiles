@@ -4,3 +4,8 @@
     st = status
     co = checkout
     amend = commit --amend
+[user]
+	email = luiz.menezesf@gmail.com
+	name = Luiz Menezes
+[core]
+	editor = vim
