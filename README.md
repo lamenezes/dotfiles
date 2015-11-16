@@ -3,24 +3,15 @@
 ## .vimrc
 
 ### How to use:
-1. Copy .vimrc file to your home folder (~/):
-2. Install [Vundle]:
+1. Clone this repository
 ```
-$ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+$ git clone https://github.com/lamenezes/dotfiles.git
 ```
-3. Run `:BundleInstall` on `vim`
-
-### Troubleshooting:
-If you use Gnome Terminal powerline might not work as expected, some
-characters might not be displayed.  Therefore you need to install the
-correct fonts.
-
-Check the following repo to download a powerline-friendly font: https://github.com/powerline/fonts
-
-## .pythonrc
-
-### How to use:
-Move the .pythonrc to your ~/ folder and add the following code to your ~/.bashrc file:
-
-    PYTHONSTARTUP=~/.pythonrc.py
-    export PYTHONSTARTUP
+2. Cd to the repository folder
+```
+$ cd dotfiles
+```
+3. Run setup.py
+```
+$ python3.5 setup.py
+```
