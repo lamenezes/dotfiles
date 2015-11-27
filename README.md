@@ -1,7 +1,5 @@
 # These are my .files, enjoy.
 
-## .vimrc
-
 ### How to use:
 1. Clone this repository
 ```
