@@ -9,3 +9,5 @@
 	name = Luiz Menezes
 [core]
 	editor = vim
+[push]
+	default = simple
