@@ -20,6 +20,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'wincent/Command-T'
 "
 " ...
 
