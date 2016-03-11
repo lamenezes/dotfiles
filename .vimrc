@@ -78,3 +78,7 @@ syntax on
 
 " jedi vim configs
 let g:jedi#popup_on_dot = 0
+
+" command-t
+let g:CommandTFileScanner = "find"  " use find over ruby alternative
+let g:CommandTWildIgnore=&wildignore . ",*.pyc"  " ignore .pyc files
