@@ -82,3 +82,6 @@ let g:jedi#popup_on_dot = 0
 " command-t
 let g:CommandTFileScanner = "find"  " use find over ruby alternative
 let g:CommandTWildIgnore=&wildignore . ",*.pyc"  " ignore .pyc files
+
+" synstatisc
+let g:syntastic_check_on_open = 1
