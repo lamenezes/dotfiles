@@ -1,0 +1,14 @@
+{
+  "globals": {
+    "window": true,
+    "$": true,
+    "jQuery": true,
+    "document": true,
+    "Backbone": true,
+    "localStorage": true,
+    "_": true
+  },
+  "jquery": true,
+  "undef": true,
+  "unused": true
+}
