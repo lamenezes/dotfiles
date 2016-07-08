@@ -18,7 +18,7 @@ subprocess.run(['fc-cache', '-fv'])
 print('Moving dotfiles...')
 subprocess.run(['cp', '.bash_aliases', '.gitconfig', '.pythonrc.py', '.vimrc',
                path.expanduser('~')])
-subprocess.run(['cp', '.config/flake8', '.config'])
+subprocess.run(['cp', '-ax', '.config/*', path.expanduser('~/.config')])
 
 # appending bashrc-extra to bashrc
 print('Updating .bashrc...')
