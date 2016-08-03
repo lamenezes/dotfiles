@@ -94,3 +94,9 @@ let g:CommandTWildIgnore=&wildignore . ",*.pyc"  " ignore .pyc files
 
 " synstatisc
 let g:syntastic_check_on_open = 1
+
+nnoremap <leader>p oimport pdb; pdb.set_trace()<Esc>
+nnoremap <leader><S-p> Oimport pdb; pdb.set_trace()<Esc>
+
+" disable vim markdown folding
+let g:vim_markdown_folding_disabled=1
