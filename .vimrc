@@ -84,6 +84,9 @@ syntax on
 
 " jedi vim configs
 let g:jedi#popup_on_dot = 0
+let g:jedi#show_call_signatures = "0"
+" don't popup docstring window
+autocmd FileType python setlocal completeopt-=preview
 
 " command-t
 let g:CommandTFileScanner = "find"  " use find over ruby alternative
