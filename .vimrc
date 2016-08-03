@@ -21,6 +21,12 @@ Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'wincent/Command-T'
+Bundle 'vim-latex/vim-latex'
+Plugin 'godlygeek/tabular'
+
+" color scheme
+Plugin 'sickill/vim-monokai'
+
 "
 " ...
 
