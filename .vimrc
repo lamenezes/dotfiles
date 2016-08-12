@@ -23,6 +23,9 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'wincent/Command-T'
 Bundle 'vim-latex/vim-latex'
 Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-sleuth'
+Plugin 'alvan/vim-closetag'
+Plugin 'tpope/vim-fugitive'
 
 " color scheme
 Plugin 'sickill/vim-monokai'
@@ -81,6 +84,8 @@ let g:Powerline_symbols="fancy"
 
 " allow syntax
 syntax on
+syntax enable
+colorscheme monokai
 
 " jedi vim configs
 let g:jedi#popup_on_dot = 0
