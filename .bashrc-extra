@@ -86,5 +86,10 @@ transfer() {
     rm -f $tmpfile
 }
 
+# unlimited history
 HISTSIZE=""
 HISTFILESIZE=""
+EDITOR='vim'
+
+# python
+PYTHONSTARTUP=$HOME/.pythonrc.py
