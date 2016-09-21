@@ -4,6 +4,7 @@
     st = status
     co = checkout
     amend = commit --amend
+    unst = reset HEAD --
 [user]
     email = luiz.menezesf@gmail.com
     name = Luiz Menezes
