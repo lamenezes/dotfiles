@@ -1,0 +1,10 @@
+#!/bin/bash
+# This hook is sourced after a new virtualenv is activated.
+
+echo 'Appending project to virtualenv...'
+setvirtualenvproject $VIRTUAL_ENV $(pwd)
+
+echo 'Installing default python packages...'
+pip install -qr $PROJECT_HOME/dev_requirements.txt
+
+cdproject

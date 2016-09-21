@@ -16,8 +16,8 @@ subprocess.run(['cp', 'fonts/Sauce Code Powerline Regular.otf',
 subprocess.run(['fc-cache', '-fv'])
 
 print('Moving dotfiles...')
-subprocess.run(['cp', '.bash_aliases', '.gitconfig', '.pythonrc.py', '.vimrc',
-                '.tmux.conf', path.expanduser('~')])
+subprocess.run(['cp', '-ax', '.bash_aliases', '.gitconfig', '.pythonrc.py', '.vimrc',
+                '.tmux.conf', '.virtualenvs', path.expanduser('~')])
 subprocess.run(['cp', '-ax', '.config/*', path.expanduser('~/.config')])
 
 # appending bashrc-extra to bashrc
@@ -29,4 +29,5 @@ bashrc = subprocess.run(['cat', path.expanduser('~/.bashrc')], stdout=subprocess
 bashrc = '{}\n{}'.format(bashrc.stdout, bashrc_venv.stdout)
 with open(path.expanduser('~/.bashrc'), 'w') as f:
     f.write(bashrc)
+
 print('dotfiles has been sucessfully installed')
