@@ -23,9 +23,9 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'wincent/Command-T'
 Bundle 'vim-latex/vim-latex'
 Plugin 'godlygeek/tabular'
-Plugin 'tpope/vim-sleuth'
 Plugin 'alvan/vim-closetag'
 Plugin 'tpope/vim-fugitive'
+Plugin 'editorconfig/editorconfig-vim'
 
 " color scheme
 Plugin 'sickill/vim-monokai'
@@ -100,8 +100,11 @@ let g:CommandTWildIgnore=&wildignore . ",*.pyc"  " ignore .pyc files
 " synstatisc
 let g:syntastic_check_on_open = 1
 
-nnoremap <leader>p oimport pdb; pdb.set_trace()<Esc>
-nnoremap <leader><S-p> Oimport pdb; pdb.set_trace()<Esc>
+nnoremap <leader>p oimport ipdb; ipdb.set_trace()<Esc>
+nnoremap <leader><S-p> Oimport ipdb; ipdb.set_trace()<Esc>
 
 " disable vim markdown folding
 let g:vim_markdown_folding_disabled=1
+
+" editorconfig + fugitive
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
