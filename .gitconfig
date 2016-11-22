@@ -6,7 +6,6 @@
     amend = commit --amend
     unst = reset HEAD --
 [user]
-    email = luiz.menezesf@gmail.com
     name = Luiz Menezes
 [core]
     editor = vim
