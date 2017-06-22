@@ -1,13 +1,15 @@
 [alias]
     ci = commit
-    br = branch
+    br = branch -vv
     st = status
     co = checkout
     amend = commit --amend
     unst = reset HEAD --
-[user]
-    name = Luiz Menezes
+    a = add
+    d = diff
+    re = rebase
 [core]
     editor = vim
+	excludesfile = /home/luiz/.gitignore_global
 [push]
-    default = simple
+    default = matching
