@@ -1,12 +1,3 @@
-############################
-#### VIRTUALENV WRAPPER ####
-############################
-
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/devel
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
-source /usr/local/bin/virtualenvwrapper.sh
-
 #####################
 #### TRANSFER.SH ####
 #####################
