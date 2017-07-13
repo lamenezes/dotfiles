@@ -60,3 +60,8 @@ GOPATH=/home/luiz/devel/gopath
 
 # python
 PYTHONSTARTUP=$HOME/.pythonrc.py
+
+# pyenv
+export PATH="/home/luiz/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

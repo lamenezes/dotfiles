@@ -2,36 +2,11 @@ import os
 import os.path as path
 import subprocess
 
-print('Installing vundle...')
-
-subprocess.run([
-    'git', 'clone', 'https://github.com/gmarik/vundle.git',
-    path.expanduser('~/.vim/bundle/vundle'),
-])
-subprocess.run([
-    'vim', '-c', ':BundleInstall'
-])
-
-print('Vundle installed')
-
-print('Installing fonts')
-
-if not path.exists(path.expanduser('~/.fonts')):
-    os.mkdir(path.expanduser('~/.fonts'))
-
-subprocess.run([
-    'cp', 'fonts/Sauce Code Powerline Regular.otf',
-    path.expanduser('~/.fonts'),
-])
-subprocess.run([
-    'fc-cache', '-fv'
-])
-
 print('Moving dotfiles...')
 
 subprocess.run([
     'cp', '-ax',
-    '.bash_aliases', '.gitconfig', '.gitignore_blobal', '.pythonrc.py',
+    '.bash_aliases', '.gitconfig', '.gitignore_global', '.pythonrc.py',
     '.vimrc', '.tmux.conf', '.virtualenvs', '.bash_profile',
     path.expanduser('~')
 ])
@@ -57,5 +32,30 @@ bashrc = subprocess.run(
 bashrc = '{}\n{}'.format(bashrc.stdout, bashrc_venv.stdout)
 with open(path.expanduser('~/.bashrc'), 'w') as f:
     f.write(bashrc)
+
+print('Installing vundle...')
+
+subprocess.run([
+    'git', 'clone', 'https://github.com/gmarik/vundle.git',
+    path.expanduser('~/.vim/bundle/vundle'),
+])
+subprocess.run([
+    'vim', '-c', ':BundleInstall'
+])
+
+print('Vundle installed')
+
+print('Installing fonts')
+
+if not path.exists(path.expanduser('~/.fonts')):
+    os.mkdir(path.expanduser('~/.fonts'))
+
+subprocess.run([
+    'cp', 'fonts/Sauce Code Powerline Regular.otf',
+    path.expanduser('~/.fonts'),
+])
+subprocess.run([
+    'fc-cache', '-fv'
+])
 
 print('dotfiles has been sucessfully installed')
