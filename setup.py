@@ -6,8 +6,15 @@ print('Moving dotfiles...')
 
 subprocess.run([
     'cp', '-ax',
-    '.bash_aliases', '.gitconfig', '.gitignore_global', '.pythonrc.py',
-    '.vimrc', '.tmux.conf', '.virtualenvs', '.bash_profile',
+    '.bash_aliases',
+    '.bash_profile',
+    '.config',
+    '.gitconfig',
+    '.gitignore_global',
+    '.pythonrc.py',
+    '.tmux.conf',
+    '.vimrc',
+    '.virtualenvs',
     path.expanduser('~')
 ])
 subprocess.run([
