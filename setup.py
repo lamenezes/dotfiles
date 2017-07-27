@@ -9,6 +9,7 @@ subprocess.run([
     '.bash_aliases',
     '.bash_profile',
     '.config',
+    '.editorconfig',
     '.gitconfig',
     '.gitignore_global',
     '.pythonrc.py',
