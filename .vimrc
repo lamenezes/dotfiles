@@ -83,7 +83,8 @@ colorscheme monokai
 " jedi vim configs
 let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = "0"
-" don't popup docstring window
+let g:jedi#completions_command = "<C-Space>"
+" don't popup docstring window:
 autocmd FileType python setlocal completeopt-=preview
 
 " command-t
@@ -93,22 +94,27 @@ let g:CommandTWildIgnore=&wildignore . ",*.pyc,*/node_modules"  " ignore .pyc fi
 " synstatisc
 let g:syntastic_check_on_open = 1
 
-nnoremap <leader>p oimport ipdb; ipdb.set_trace()<Esc>
-nnoremap <leader><S-p> Oimport ipdb; ipdb.set_trace()<Esc>
-
 " disable vim markdown folding
 let g:vim_markdown_folding_disabled=1
 
 " editorconfig + fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
-" remaps for working with minibufexpl.vim
-noremap <C-J>     <C-W>j
-noremap <C-K>     <C-W>k
-noremap <C-H>     <C-W>h
-noremap <C-L>     <C-W>l
-
 " disable folding on vim-latex
 :let Tex_FoldedSections=""
 :let Tex_FoldedEnvironments=""
 :let Tex_FoldedMisc=""
+
+" remaps
+nmap <C-J>          <C-W>j
+nmap <C-K>          <C-W>k
+nmap <C-H>          <C-W>h
+nmap <C-L>          <C-W>l
+nmap <leader>d      oimport ipdb; ipdb.set_trace()<Esc>
+nmap <leader><S-d>  Oimport ipdb; ipdb.set_trace()<Esc>
+nmap <leader>f      :CommandTFlush<CR>
+nmap <leader>p      o<Esc>"+p
+nmap <leader>P      O<Esc>"+p
+nmap <leader>y      "+y
+vmap <leader>y      :y+<CR>
+nmap <leader>r      :! python %<CR>
