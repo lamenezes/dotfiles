@@ -65,3 +65,9 @@ PYTHONSTARTUP=$HOME/.pythonrc.py
 export PATH="/home/luiz/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# workon command / cd to project and activate pyenv virtualenv
+function wk() {
+    cd "/home/luiz/devel/$1/" &> /dev/null || cd "/home/luiz/devel/olist/$1/"
+    pyenv activate `basename $(pwd)`
+}
