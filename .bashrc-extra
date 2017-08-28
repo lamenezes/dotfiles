@@ -71,3 +71,8 @@ function wk() {
     cd "/home/luiz/devel/$1/" &> /dev/null || cd "/home/luiz/devel/olist/$1/"
     pyenv activate `basename $(pwd)`
 }
+
+function mkdb() {
+    sudo -u postgres createuser --createdb $1 -P
+    sudo -u postgres createdb $1 -O $1
+}
