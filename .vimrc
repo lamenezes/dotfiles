@@ -20,10 +20,6 @@ Bundle 'Lokaltog/powerline'
 Bundle 'sjl/gundo.vim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'wincent/Command-T'
-Bundle 'vim-latex/vim-latex'
-Plugin 'godlygeek/tabular'
-Plugin 'alvan/vim-closetag'
-Plugin 'tpope/vim-fugitive'
 Plugin 'editorconfig/editorconfig-vim'
 
 " color scheme
