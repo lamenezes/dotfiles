@@ -1,6 +1,5 @@
 """
-" Vundle Configuration
-"""
+" Vundle Configuration """
 set nocompatible               " be iMproved
 filetype off                   " required for vundle
 set rtp+=~/.vim/bundle/vundle/
@@ -21,6 +20,9 @@ Bundle 'sjl/gundo.vim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'wincent/Command-T'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'python/black'
+Plugin 'scrooloose/vim-slumlord'
 
 " color scheme
 Plugin 'sickill/vim-monokai'
@@ -102,15 +104,19 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 :let Tex_FoldedMisc=""
 
 " remaps
-nmap <C-J>          <C-W>j
-nmap <C-K>          <C-W>k
-nmap <C-H>          <C-W>h
-nmap <C-L>          <C-W>l
-nmap <leader>d      oimport ipdb; ipdb.set_trace()<Esc>
-nmap <leader><S-d>  Oimport ipdb; ipdb.set_trace()<Esc>
-nmap <leader>f      :CommandTFlush<CR>
-nmap <leader>p      o<Esc>"+p
-nmap <leader>P      O<Esc>"+p
-nmap <leader>y      "+y
-vmap <leader>y      :y+<CR>
-nmap <leader>r      :! python %<CR>
+nnoremap <C-J>          <C-W>j
+nnoremap <C-K>          <C-W>k
+nnoremap <C-H>          <C-W>h
+nnoremap <C-L>          <C-W>l
+nnoremap <leader>d      oimport ipdb; ipdb.set_trace()<Esc>
+nnoremap <leader><S-d>  Oimport ipdb; ipdb.set_trace()<Esc>
+nnoremap <leader>f      :CommandTFlush<CR>
+nnoremap <leader>p      o<ESC>"+p
+nnoremap <leader>P      O<ESC>"+p
+nnoremap <leader>y      "+y
+nnoremap <leader>Y      "+Y
+nnoremap <leader>r      :! python %<CR>
+nnoremap <leader>s      :w<CR>
+nnoremap <leader>q      :wq<CR>
+nnoremap <leader>Q      :q!<CR>
+nnoremap <leader>S      ^ldt'f'lPldt'2F'Pj^

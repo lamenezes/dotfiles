@@ -1,3 +1,12 @@
 *~
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
+*~
+*.sw[mnop]
+.project
+.coverage
+*.lock
+*.egg-info
+*.pyc
+dist/
+pip-wheel-metadata/
