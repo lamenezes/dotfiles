@@ -66,4 +66,9 @@ subprocess.run([
     'fc-cache', '-fv'
 ])
 
+subprocess.run(
+    ['dconf', 'load', '/org/gnome/terminal/'],
+    stdin=open('./gnome-terminal-settings.txt')
+)
+
 print('dotfiles has been sucessfully installed')

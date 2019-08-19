@@ -1,0 +1,8 @@
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+use-theme-colors=false
+use-system-font=false
+visible-name='defo'
+font='Source Code Pro for Powerline 10'
+
+[legacy]
+schema-version=uint32 3
