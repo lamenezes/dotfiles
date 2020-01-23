@@ -1,3 +1,7 @@
 *~
-*.sw[mnop]
+*.sw[lmnop]
 .project
+.mypy_cache/
+.coverage
+.eggs/
+.python-version

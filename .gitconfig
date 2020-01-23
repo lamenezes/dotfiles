@@ -14,3 +14,5 @@
 	excludesfile = /home/luiz/.gitignore_global
 [push]
     default = matching
+[color]
+	ui = auto

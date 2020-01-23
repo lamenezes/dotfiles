@@ -23,6 +23,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'python/black'
 Plugin 'scrooloose/vim-slumlord'
+Plugin 'MaxMEllon/vim-jsx-pretty'
 
 " color scheme
 Plugin 'sickill/vim-monokai'
