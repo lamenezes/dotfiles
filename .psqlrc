@@ -1,3 +1,10 @@
 \setenv PAGER less
 \setenv LESS -IS
 \pset linestyle unicode
+
+\setenv EDITOR '/usr/bin/vim'
+
+\pset null '(null)'
+\timing
+
+\set VERBOSITY verbose
