@@ -7,7 +7,7 @@ insert_final_newline = true
 
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{js,py,html}]
+[*.{js,py,html,dart}]
 indent_style = space
 charset = utf-8
 
@@ -21,11 +21,11 @@ max_line_length = 108
 indent_style = tab
 
 # Indentation override for all JS under lib directory
-[*.html]
+[*.{html,js,jsx,dart}]
 indent_size = 2
 
 # Matches the exact files either package.json or .travis.yml
-[*.{jsx,json,yml}]
+[*.{json,yml}]
 indent_style = space
 indent_size = 2
 

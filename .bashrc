@@ -184,23 +184,6 @@ export PATH="/home/luiz/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-
-function it() {
-    if tmux has-session -t dev;
-    then
-        tmux new-window -t dev
-        tmux rename-window -t dev $1
-    else
-        tmux new -s dev -d
-    fi
-    tmux send-keys -t dev "wk $1" C-m
-    tmux send-keys -t dev "tmux split-window -d -v -l 17" C-m
-    tmux send-keys -t dev "tmux split-window -d -h -t dev.2" C-m
-    tmux send-keys -t dev "tmux send-keys -t dev.2 'wk $1 && clear' C-m" C-m
-    tmux send-keys -t dev "tmux send-keys -t dev.3 'wk $1 && clear' C-m && clear" C-m
-    tmux attach -t dev
-}
-
 # workon command / cd to project and activate pyenv virtualenv
 function wk() {
     cd "/home/luiz/devel/$1/" &> /dev/null || cd "/home/luiz/devel/stoq/$1"
@@ -210,9 +193,4 @@ function wk() {
 function mkdb() {
     sudo -u postgres createuser --createdb $1 -P
     sudo -u postgres createdb $1 -O $1
-}
-
-function mkpy() {
-    mkdir $1 -p
-    touch $1/__init__.py
 }

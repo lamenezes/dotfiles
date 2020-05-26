@@ -1,7 +1,11 @@
 *~
 *.sw[lmnop]
 .project
+.ipynb_checkpoints/
 .mypy_cache/
+*.pyc
 .coverage
+.env
+*.egg-info/
 .eggs/
 .python-version
