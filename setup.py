@@ -71,4 +71,6 @@ subprocess.run(
     stdin=open('./gnome-terminal-settings.txt')
 )
 
+os.system('curl https://pyenv.run | bash')
+
 print('dotfiles has been sucessfully installed')
