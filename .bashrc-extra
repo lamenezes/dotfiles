@@ -58,13 +58,18 @@ EDITOR='vim'
 
 GOPATH=/home/luiz/devel/gopath
 
-# python
+# pythonrc path
 PYTHONSTARTUP=$HOME/.pythonrc.py
 
 # pyenv
 export PATH="/home/luiz/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # workon command / cd to project and activate pyenv virtualenv
 function wk() {
@@ -96,4 +101,8 @@ function it() {
     tmux send-keys -t dev "tmux send-keys -t dev.2 'wk $1 && clear' C-m" C-m
     tmux send-keys -t dev "tmux send-keys -t dev.3 'wk $1 && clear' C-m && clear" C-m
     tmux attach -t dev
+}
+
+function lg() {
+    rg -p "$@" | less -RK
 }
