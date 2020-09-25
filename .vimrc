@@ -30,6 +30,8 @@ Plugin 'MaxMEllon/vim-jsx-pretty'
 Plugin 'thosakwe/vim-flutter'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'tpope/vim-repeat'
+Plugin 'raimon49/requirements.txt.vim'
+Plugin 'cespare/vim-toml'
 
 " color scheme
 Plugin 'sickill/vim-monokai'
