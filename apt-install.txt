@@ -1,1 +1,1 @@
-git tmux tmate tree xclip gimp inkscape vim vim-gnome vim-rails curl python3-pip postgresql-server-dev-all vlc calibre htop chromium-browser gnome-tweaks-tool g++ ripgrep bat rename
+git tmux tmate tree xclip gimp inkscape vim vim-gnome vim-rails curl python3-pip postgresql-server-dev-all vlc calibre htop chromium-browser gnome-tweaks-tool g++ ripgrep bat rename pwgen
