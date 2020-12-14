@@ -9,6 +9,8 @@
     d = diff
     dc = diff --cached
     re = rebase
+    ri = !sh -c 'git rebase -i HEAD~$1' -
+    rh = !sh -c 'git reset --hard HEAD~$1' -
 [core]
     editor = vim
 	excludesfile = /home/luiz/.gitignore_global
