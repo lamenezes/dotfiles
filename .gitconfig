@@ -11,6 +11,7 @@
     re = rebase
     ri = !sh -c 'git rebase -i HEAD~$1' -
     rh = !sh -c 'git reset --hard HEAD~$1' -
+    l = log --oneline
 [core]
     editor = vim
 	excludesfile = /home/luiz/.gitignore_global

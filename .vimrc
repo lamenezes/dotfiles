@@ -96,7 +96,7 @@ autocmd FileType python setlocal completeopt-=preview
 
 " command-t
 let g:CommandTFileScanner = "find"  " use find over ruby alternative
-let g:CommandTWildIgnore=&wildignore . ",*.pyc,*/node_modules"  " ignore .pyc files
+let g:CommandTWildIgnore=&wildignore . ",*.pyc,*/node_modules,*/dist"  " ignore .pyc files
 
 " synstatisc
 let g:syntastic_check_on_open = 1
@@ -128,6 +128,12 @@ nnoremap <leader>r      :! python %<CR>
 nnoremap <leader>s      :w<CR>
 nnoremap <leader>q      :wq<CR>
 nnoremap <leader>Q      :q!<CR>
+
+" run tests on current module
+nnoremap <leader>e      :! clear && pytest -v %<CR>
+
+" run pytest
+nnoremap <leader>a      :! clear && pytest -v --pdb<CR>
 
 " swap dict key to its value (only works for 1 line key-value pair)
 nnoremap <leader>S      ^ldt'f'lPldt'2F'Pj^
