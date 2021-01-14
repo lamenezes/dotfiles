@@ -73,8 +73,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # workon command / cd to project and activate pyenv virtualenv
 function wk() {
-    cd "/home/luiz/devel/stoq/$1/" || cd "/home/luiz/devel/$1/" &> /dev/null
-    pyenv activate `basename $(pwd)`
+    __path=`find ~/devel/ -maxdepth 2 -type d -regex ".*\/$1" | tail -n 1`
+    cd $__path
+    pyenv activate `basename $(pwd)` 2> /dev/null
 }
 
 function mkdb() {
