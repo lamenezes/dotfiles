@@ -110,7 +110,7 @@ function it() {
     if ! tmux has-session -t dev; then
         tmux new-session -s dev -d -n $1
     else
-        if tmux list-windows -F '#W' > /dev/null; then
+        if tmux list-windows -F '#W' | grep "$1$" > /dev/null; then
             echo 'Window already exists. Aborting.'
             return
         fi
@@ -129,4 +129,14 @@ complete -F _it_autocompletion it
 
 function lg() {
     rg -p "$@" | less -RK
+}
+
+function cu() {
+    curl --silent "$@" | json_pp
+}
+
+function pu() {
+    name=`echo $1 | cut -f1 -d"."`
+    plantuml $name.puml $@ \
+        && eog $name.png
 }
