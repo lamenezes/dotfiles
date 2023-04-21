@@ -72,7 +72,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 _it_autocompletion() {
-    WORDS=`ls /home/luiz/devel/{stoq,softbox}/*/ -d | cut -d/ -f5-6 | sort`
+    WORDS=`ls /home/luiz/devel/{xapo}/*/ -d | cut -d/ -f5-6 | sort`
     COMPREPLY=($(compgen -W "$WORDS" "${COMP_WORDS[1]}"))
 }
 
